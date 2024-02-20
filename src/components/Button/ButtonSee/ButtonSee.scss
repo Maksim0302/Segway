@@ -1,0 +1,16 @@
+.custom-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    line-height: 15px;
+    color: #fff;
+    background: #009EFF;
+    height: 42px;
+    min-width: 130px;
+}
+.custom-button.clicked {
+    background: none;
+    border: 1px solid #C6C6C6;
+    color: #C6C6C6;
+}

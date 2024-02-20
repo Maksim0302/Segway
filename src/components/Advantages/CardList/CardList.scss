@@ -1,0 +1,55 @@
+.button-container button.active {
+    background-color: #022d48;
+    color: #fff;
+    min-width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+  .button-container {
+    min-height: 65px;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  .button {
+    width: 25%;
+    &__content {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 10px;
+        &__text {
+            max-width: 300px;
+            color: #999999;
+            font-size: 18px;
+            line-height: 21px;
+        }
+    }
+  }
+
+.advance {
+    display: flex;
+    flex-direction: column;
+}
+
+  @media screen and (max-width: 750px) {
+    .button {
+        &__content {
+            &__text {
+                display: none;
+            }
+        }
+    }
+    .advance {
+        &__button-container {
+            order: 2;
+        }
+        &__card-list {
+            order: 1;
+        }
+    }
+  }

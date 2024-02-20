@@ -1,0 +1,46 @@
+.card {
+    background: #c2c0c03b;
+    &__content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+        gap: 20px;
+        height: 100%;
+        &__text {
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            color: #323941;
+        }
+    }
+    &__title {
+        max-width: 320pxpx;
+        font-size: 25px;
+        line-height: 31px;
+        font-weight: 700;
+    }
+    &__description {
+        max-width: 530px;
+        font-size: 18px;
+        line-height: 21px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .card {
+        &__content {
+            padding: 80px 20px;
+            text-align: center;
+            flex-direction: column;
+            &__text {
+                order: 2;
+            }
+            &__image {
+                order: 1;
+            }
+        }
+        
+    }
+}

@@ -1,0 +1,43 @@
+.braking {
+    &__content {
+        display: flex;
+        align-items: center;
+        height: 100%;
+    }
+    &__text {
+        margin: auto 0 ;
+        overflow: hidden;
+        max-width: 375px;
+        max-height: 248px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        color: #323941;
+        &__title {
+            font-weight: 700;
+            font-size: clamp(20px, 5vw, 50px);
+            line-height: clamp(24px, 5vw, 60px);
+        }
+        &__description {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            font-weight: 300;
+            font-size: clamp(15px, 3vw, 18px);
+            line-height: clamp(18px, 5vw, 22px);
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .braking {
+        &__content {
+            flex-direction: column;
+        }
+        &__text {
+            max-width: 100%;
+            margin: 0 auto;
+            padding-bottom: 20px;
+        }
+    }
+}

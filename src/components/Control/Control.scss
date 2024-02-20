@@ -1,0 +1,114 @@
+.control {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: #EEEEEE;
+    &__text {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+            &__title {
+                font-weight: 700;
+                font-size: clamp(20px, 5vw, 50px);
+                line-height: clamp(24px, 5vw, 60px);
+                color: #323941;
+            }
+            &__description {
+                font-weight: 300;
+                font-size: clamp(15px, 3vw, 18px);
+                line-height: clamp(18px, 3vw, 21px);
+                color: #323941;
+                max-width: 800px;
+            }
+    }
+    &__content {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        padding: 50px;
+        &__left {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            width: 50%;
+            &__button {
+                display: flex;
+                align-items: center;
+            }
+            &__block {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 30px;
+                &__box {
+                    text-align: center;
+                    width: 120px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 18px;
+                    cursor: pointer;
+                    &__image {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 90px;
+                        height: 100px;
+                        background: #f9f8f8;
+                        position: relative;
+                        rotate: (90deg);
+                        clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+                        img {
+                            rotate: (-90deg);
+                        }
+                    }
+                    &__name {
+                        color: #999999;
+                        line-height: 17px;
+                        font-size: 14px;
+                        max-width: 98px; 
+                    }
+                }
+            }
+        }
+        &__rigt {
+            width: 50%;
+        }
+    }
+}
+
+.control__content__left__block__box:hover .control__content__left__block__box__name span {
+    color: #009EFF;
+}
+
+.control__content__left__block__box:hover .control__content__left__block__box__image {
+    background-color: #009EFF;
+}
+
+@media screen and (max-width: 1070px) {
+    .control {
+        &__content {
+            margin-top: 20px;
+            padding: 0;
+            flex-direction: column;
+            &__left {
+                order: 2;
+                align-items: center;
+                width: 100%;
+                &__block {
+                    justify-content: center;
+                    gap: 15px;
+                    &__box {
+                        width: 30%;
+                    }
+                }
+            }
+            &__right {
+                order: 1;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+}

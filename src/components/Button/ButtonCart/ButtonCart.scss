@@ -1,0 +1,15 @@
+.btn {
+    &-cart {
+        width : 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #009EFF;
+        padding: 12px 8px;
+        font-size: 18px;
+        line-height: 23px;
+        font-weight: 700;
+        text-align: center;
+        color: #fff;
+    }
+}

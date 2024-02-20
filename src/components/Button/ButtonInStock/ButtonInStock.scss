@@ -1,0 +1,11 @@
+.btn {
+    &-stock {
+        display: flex;
+        align-items: center;
+        border: 2px solid #6ACD68;
+        color: #6ACD68;
+        padding: 6px 25px;
+        font-size: 13px;
+        line-height: 15px;
+    }
+}

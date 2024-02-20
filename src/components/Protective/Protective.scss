@@ -1,0 +1,48 @@
+.protective {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: #fff;
+    &__content {
+        border: 5px solid #009EFF;
+        padding: 20px;
+        min-height: 246px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+    &__text {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        color: #323941;
+        &__title {
+            font-weight: 700;
+            font-size: clamp(20px, 5vw, 50px);
+            line-height: clamp(24px, 5vw, 60px);
+        }
+        &__description {
+            font-weight: 300;
+            font-size: clamp(14px, 4vw, 18px);
+            line-height: clamp(17px, 5vw, 22px);
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .protective {
+        &__content {
+            padding: 10px;
+        }
+        &__image {
+            order: 2;
+            img {
+                rotate: -90deg;
+            }
+        }
+        &__text {
+            order: 1;
+        }
+    }
+  }
+  

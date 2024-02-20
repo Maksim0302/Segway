@@ -1,0 +1,14 @@
+.btn {
+    &-more {
+        background: #009EFF;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 48px;
+        width: 229px;
+        color: #fff;
+        font-size: 18px;
+        line-height: 21px;
+        font-weight: 600;
+    }
+}

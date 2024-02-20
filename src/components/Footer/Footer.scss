@@ -1,0 +1,33 @@
+.footer {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background: #32393F;
+    color: #fff;
+    height: 100%;
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        &__right {
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 35px;
+            font-size: 18px;
+            line-height: 21px;
+        }
+    }
+}
+
+@media screen and (max-width: 1060px) {
+    .footer {
+        &__content {
+            flex-direction: column;
+            justify-content: center;
+            gap: 40px;
+        }
+    }
+}
