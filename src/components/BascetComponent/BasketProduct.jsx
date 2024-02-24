@@ -1,5 +1,5 @@
-import React, { useContext } from 'react'
-import { StoreContext } from '../context-and-reducer/StoreContext'
+import React, { useContext } from 'react';
+import { StoreContext } from '../../context-and-reducer/StoreContext';
 
 const BasketProduct = ({item}) => {
     const {removeFromBasket} = useContext(StoreContext);

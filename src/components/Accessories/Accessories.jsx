@@ -6,7 +6,7 @@ import Slider from "react-slick";
 import ButtonMore from '../Button/ButtonMore/ButtonMore';
 import { motion } from 'framer-motion';
 import { storeData } from '../../Data/AccessoriesData';
-import Product from '../Product';
+import Product from '../BascetComponent/Product';
 
 const Accessories = () => {
   var settings = {
@@ -23,6 +23,7 @@ const Accessories = () => {
         initial={{opacity: 0, scale: 0}}
         whileInView={{opacity: 1, scale: 1}}
         transition={{duration: 1}}
+        viewport={{once:true}}
     >
         <div className="container">
             <div className="accessories__title">

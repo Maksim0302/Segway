@@ -9,6 +9,7 @@ const Protective = () => {
         initial={{opacity: 0, scale: 0}}
         whileInView={{opacity: 1, scale: 1}}
         transition={{duration: 1}}
+        viewport={{once:true}}
     >
         <div className="container">
             <div className="protective__content">
@@ -16,6 +17,7 @@ const Protective = () => {
                     initial={{opacity: 0, x: -80}}
                     whileInView={{opacity: 1, x: 0}}
                     transition={{duration: 2}}
+                    viewport={{once:true}}
                 >
                     <img src={ProtectiveImg} alt="" />
                 </motion.div>
@@ -23,6 +25,7 @@ const Protective = () => {
                     initial={{opacity: 0, scale: 0.5}}
                     whileInView={{opacity: 1, scale: 1}}
                     transition={{duration: 2}}
+                    viewport={{once:true}}
                 >
                     <div className="protective__text__title">
                         <h2>SEGWAY PROTECTIVE GEAR SET AS A GIFT</h2>
@@ -37,4 +40,4 @@ const Protective = () => {
   )
 }
 
-export default Protective
+export default Protective;

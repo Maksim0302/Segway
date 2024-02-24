@@ -10,6 +10,7 @@ const Regenerative = () => {
         initial={{opacity: 0, scale: 0}}
         whileInView={{opacity: 1, scale: 1}}
         transition={{duration: 1}}
+        viewport={{once:true}}
     >
             <div className="regenerative__image">
             <div className="regenerative__image__desctop">
@@ -23,6 +24,7 @@ const Regenerative = () => {
             initial={{opacity: 0, y: 100}}
             whileInView={{opacity: 1, y: 0}}
             transition={{duration: 2}}
+            viewport={{once:true}}
         >
             <div className="regenerative__text__title">
                 <h2>REGENERATIVE BRAKE FOR POWER RECYCLE</h2>
@@ -35,4 +37,4 @@ const Regenerative = () => {
   )
 }
 
-export default Regenerative
+export default Regenerative;

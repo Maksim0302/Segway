@@ -2,15 +2,16 @@ import React from 'react';
 import './Packing.scss';
 import PackingImg from '../../images/complekt/image.png';
 import { motion } from 'framer-motion';
-import ReactPlayer from 'react-player'
-
+import ReactPlayer from 'react-player';
 
 const Packing = () => {
+
   return (
     <motion.section className="packing"
         initial={{opacity: 0, scale: 0}}
-        whileInView={{opacity: 1, scale: 1}}
+        animate={{opacity: 1, scale: 1}}
         transition={{duration: 1}}
+        viewport={{once:true}}
     >
         <div className="container">
             <div className="packing__title packing__mobile__title">
@@ -22,13 +23,14 @@ const Packing = () => {
                         PACKING LIST
                     </div>
                     <div className="packing__content__left__video">
-                    <div className = 'player-wrapper'>
-                        <ReactPlayer className = 'react-player'  
-                            url='https://youtu.be/9fgxm4NFNa0?si=7CiqNCi3rHsOHXcU'
-                            width = '100%' 
-                            height = '100%' 
-                        />
-                    </div>
+                        <div className="player-wrapper">
+                            <ReactPlayer
+                                className="react-player"
+                                url="https://www.youtube.com/watch?v=9fgxm4NFNa0"
+                                width="100%"
+                                height="100%"
+                            />
+                        </div>
                     </div>
                 </div>
                 <div className="packing__content__right">
@@ -43,4 +45,5 @@ const Packing = () => {
 }
 
 export default Packing;
+
 

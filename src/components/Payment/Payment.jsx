@@ -27,6 +27,7 @@ const Payment = () => {
         initial={{opacity: 0, scale: 0}}
         whileInView={{opacity: 1, scale: 1}}
         transition={{duration: 1}}
+        viewport={{once:true}}
     >
         <div className="container">
             <div className="payment__content">
@@ -106,6 +107,7 @@ const Payment = () => {
                      initial={{opacity: 0, x: -80}}
                      whileInView={{opacity: 1, x: 0}}
                      transition={{duration: 2}}
+                    viewport={{once:true}}
                 >
                     <div className="payment__button">
                         <ButtonInStock/>
@@ -164,6 +166,7 @@ const Payment = () => {
                     initial={{opacity: 0, scale: 0.5}}
                     whileInView={{opacity: 1, scale: 1}}
                     transition={{duration: 2}}
+                    viewport={{once:true}}
                 >
                     <Slider  {...seter}> 
                                 {MethodsProductData.map((id, index) => (
@@ -181,4 +184,4 @@ const Payment = () => {
   )
 }
 
-export default Payment
+export default Payment;

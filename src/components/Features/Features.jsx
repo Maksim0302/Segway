@@ -11,6 +11,7 @@ const Features = () => {
         initial={{opacity: 0, scale: 0}}
         whileInView={{opacity: 1, scale: 1}}
         transition={{duration: 1}}
+        viewport={{once:true}}
     >
         <div className="features__image">
             <img src={FeaturesImage} alt="" />
@@ -23,6 +24,7 @@ const Features = () => {
                 initial={{opacity: 0, y: 100}}
                 whileInView={{opacity: 1, y: 0}}
                 transition={{duration: 2}}
+                viewport={{once:true}}
             >
             {FeaturesData.map((data,index) => (
                 <div className="features__box" key={index} >

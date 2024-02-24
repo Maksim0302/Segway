@@ -12,6 +12,7 @@ const Control = () => {
         initial={{opacity: 0, scale: 0}}
         whileInView={{opacity: 1, scale: 1}}
         transition={{duration: 1}}
+        viewport={{once:true}}
     >
         <div className="container">
             <div className="control__text">
@@ -26,9 +27,10 @@ const Control = () => {
             </div>
             <div className="control__content">
                 <motion.div className="control__content__left"
-                     initial={{opacity: 0, x: -80}}
-                     whileInView={{opacity: 1, x: 0}}
-                     transition={{duration: 2}}
+                    initial={{opacity: 0, x: -80}}
+                    whileInView={{opacity: 1, x: 0}}
+                    transition={{duration: 2}}
+                    viewport={{once:true}}
                 >
                     <div className="control__content__left__block">
                         {ControlData.map((data, index) => (
@@ -52,6 +54,7 @@ const Control = () => {
                     initial={{opacity: 0, scale: 0.5}}
                     whileInView={{opacity: 1, scale: 1}}
                     transition={{duration: 2}}
+                    viewport={{once:true}}
                 >
                     <img src={ControlMobileImg} alt="" />
                 </motion.div>

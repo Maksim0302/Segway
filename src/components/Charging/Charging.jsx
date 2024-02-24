@@ -9,6 +9,7 @@ const Charging = () => {
         initial={{opacity: 0, scale: 0}}
         whileInView={{opacity: 1, scale: 1}}
         transition={{duration: 1}}
+        viewport={{once:true}}
     >
             <div className="container">
                 <div className="charging__content">
@@ -19,6 +20,7 @@ const Charging = () => {
                         initial={{opacity: 0, y: 100}}
                         whileInView={{opacity: 1, y: 0}}
                         transition={{duration: 2}}
+                        viewport={{once:true}}
                     >
                         <div className="charging__text__title">
                             <h2>EASY ONE CORD FAST CHARGING</h2>

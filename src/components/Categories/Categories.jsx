@@ -50,6 +50,7 @@ const Categories = () => {
           initial={{opacity: 0, scale: 0}}
           whileInView={{opacity: 1, scale: 1}}
           transition={{duration: 1}}
+          viewport={{once:true}}
         >
           <div className="categories__content categories__content__desctop">
             {CategoriesData.map((data, index) => (

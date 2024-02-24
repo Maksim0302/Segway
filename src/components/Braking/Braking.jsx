@@ -9,6 +9,7 @@ const Braking = () => {
         initial={{opacity: 0, scale: 0}}
         whileInView={{opacity: 1, scale: 1}}
         transition={{duration: 1}}
+        viewport={{once:true}}
     >
         <div className="braking__content">
             <div className="braking__image">
@@ -19,6 +20,7 @@ const Braking = () => {
                     initial={{opacity: 0, y: 100}}
                     whileInView={{opacity: 1, y: 0}}
                     transition={{duration: 2}}
+                    viewport={{once:true}}
                 >
                     <div className="braking__text__title">
                         <h2>DUAL BRAKING SYSTEM</h2>

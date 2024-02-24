@@ -11,6 +11,7 @@ const Built = () => {
         initial={{opacity: 0, scale: 0}}
         whileInView={{opacity: 1, scale: 1}}
         transition={{duration: 1}}
+        viewport={{once:true}}
     >
         <div className="built__image">
             <div className="built__image__desctop">
@@ -24,6 +25,7 @@ const Built = () => {
             initial={{opacity: 0, y: 100}}
             whileInView={{opacity: 1, y: 0}}
             transition={{duration: 2}}
+            viewport={{once:true}}
         >
             <div className="built__text__title">
                 <h2>BUILT-IN FRONT LED LIGHT</h2>

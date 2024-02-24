@@ -16,6 +16,7 @@ const Kickscooter = () => {
         initial={{opacity: 0, scale: 0}}
         whileInView={{opacity: 1, scale: 1}}
         transition={{duration: 1}}
+        viewport={{once:true}}
     >
         <div className="container">
             <div className="payment__content">
@@ -91,6 +92,7 @@ const Kickscooter = () => {
                     initial={{opacity: 0, x: -80}}
                     whileInView={{opacity: 1, x: 0}}
                     transition={{duration: 2}}
+                    viewport={{once:true}}
                 >
                     <div className="payment__button">
                         <ButtonInStock/>
@@ -149,6 +151,7 @@ const Kickscooter = () => {
                      initial={{opacity: 0, scale: 0.5}}
                      whileInView={{opacity: 1, scale: 1}}
                      transition={{duration: 2}}
+                     viewport={{once:true}}
                 >
                     <div className="payment__slider" >
                     <div className="payment__image">

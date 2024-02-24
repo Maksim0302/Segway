@@ -10,6 +10,7 @@ const Riding = () => {
         initial={{opacity: 0, scale: 0}}
         whileInView={{opacity: 1, scale: 1}}
         transition={{duration: 1}}
+        viewport={{once:true}}
     >
         <div className="riding__image">
             <div className="riding__image__desctop">
@@ -23,6 +24,7 @@ const Riding = () => {
             initial={{opacity: 0, y: 100}}
             whileInView={{opacity: 1, y: 0}}
             transition={{duration: 2}}
+            viewport={{once:true}}
         >
             <div className="riding__text__title">
                 <h2>3 RIDING MODES</h2>
@@ -35,4 +37,4 @@ const Riding = () => {
   )
 }
 
-export default Riding
+export default Riding;

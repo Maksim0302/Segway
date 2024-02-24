@@ -1,10 +1,14 @@
-import React from 'react';
+// import React from 'react';
 import { HiMenu, HiX } from 'react-icons/hi';
 import { BsInstagram } from 'react-icons/bs';
 import { FiPhone } from "react-icons/fi";
 import logo from "../../images/logo.png";
 import './Header.scss';
-import Home from '../../pages/Home';
+// import Home from '../../pages/Home';
+import React, { useContext } from 'react';
+import { Link } from 'react-router-dom';
+import { StoreContext } from '../../context-and-reducer/StoreContext';
+import { HiShoppingCart } from 'react-icons/hi';
 
 const Header = ({menuOpen, setMenuOpen}) => {
     const menuIcon = menuOpen ? <HiX/> : <HiMenu/>;
@@ -31,6 +35,8 @@ export const ResponsiveMenu = ({menuOpen, setMenuOpen}) => {
 };
 
 const Navbar = ({setMenuOpen}) => {
+  const {products} = useContext(StoreContext);
+
     return (
         <>
             <nav className='header__nav'>
@@ -58,7 +64,12 @@ const Navbar = ({setMenuOpen}) => {
                 </div>
             </nav>
             <div className="nav__icons">
-                <Home className='nav__icons__cart nav-icon'/>
+                <div className='basket-icon'>
+                    <Link to="/basket" ><HiShoppingCart className='nav__icons__cart nav-icon'/>
+                    <span className='basket-icon__number'>{products.length}</span>
+                    </Link>
+                </div>
+                {/* <Home className='nav__icons__cart nav-icon'/> */}
                 <BsInstagram className='nav__icons__insta nav-icon'/>
                 <a className="nav__icons nav-icons__phone" href="tel:+1 (888) 888-88-88">
                     <span className='nav__icons__number'>+1 (888) 888-88-88</span>

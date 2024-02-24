@@ -10,6 +10,7 @@ const Battery = () => {
         initial={{opacity: 0, scale: 0}}
         whileInView={{opacity: 1, scale: 1}}
         transition={{duration: 1}}
+        viewport={{once:true}}
     >
         <div className="battery__image">
             <div className="battery__image__desctop">
@@ -23,6 +24,7 @@ const Battery = () => {
             initial={{opacity: 0, y: 100}}
             whileInView={{opacity: 1, y: 0}}
             transition={{duration: 2}}
+            viewport={{once:true}}
         >
             <div className="battery__text__title">
                 <h2>SMART BATTERY MANAGEMENT SYSTEM (SMART-BMS)</h2>

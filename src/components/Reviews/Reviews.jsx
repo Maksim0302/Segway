@@ -47,6 +47,7 @@ const Reviews = () => {
       initial={{opacity: 0, scale: 0}}
       whileInView={{opacity: 1, scale: 1}}
       transition={{duration: 1}}
+      viewport={{once:true}}
     >
         <div className="container">
             <div className="reviews__title">
@@ -61,12 +62,11 @@ const Reviews = () => {
                             </div>
                         </div>
                     ))}
-            </Slider>
-
+                </Slider>
             </div>
         </div>
     </motion.section>
   )
 }
 
-export default Reviews
+export default Reviews;

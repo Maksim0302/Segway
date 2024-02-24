@@ -1,46 +1,5 @@
-// import React, { useContext } from 'react';
-// import { StoreContext } from '../context-and-reducer/StoreContext';
-
-// const Product = ({item}) => {
-//   const {addToBasket} = useContext(StoreContext);
-
-//   const handleAdd = () => {
-//     addToBasket(item);
-//   }
-//   return (
-//     <>
-//         <div className="cards__item">
-//             <div className="accessories__cart">
-//               <div className="accessories__cart__image">
-//                   <img src={item.imgUrl} alt="" />
-//               </div>
-//               <div className="accessories__cart__box">
-//                   <div className="accessories__cart__title">
-//                       {item.title}
-//                   </div>
-//                   <div className="accessories__cart__description">
-//                       {item.description}
-//                   </div>
-//                   <div className="accessories__cart__price">
-//                       <div className="accessories__cart__price__text">
-//                           <span>Price</span>
-//                       </div>
-//                       <span>${item.price.toFixed(2)}</span>
-//                   </div>
-//               </div>
-//               <div className="accessories__cart__btn">
-//                   <button onClick={handleAdd} className='accessories__cart__btn__add'>ADD TO CART</button>
-//               </div>
-//             </div>
-//         </div>
-
-//     </>
-//   )
-// }
-
-// export default Product
 import React, { useContext, useState, useEffect } from 'react';
-import { StoreContext } from '../context-and-reducer/StoreContext';
+import { StoreContext } from '../../context-and-reducer/StoreContext';
 
 const Product = ({ item }) => {
   const { addToBasket, removeFromBasket, basket } = useContext(StoreContext);

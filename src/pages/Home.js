@@ -1,18 +1,69 @@
-import React, { useContext } from 'react';
-import { Link } from 'react-router-dom';
-import { StoreContext } from '../context-and-reducer/StoreContext';
-import { HiShoppingCart } from 'react-icons/hi';
+import { useState } from "react";
+import Header, { ResponsiveMenu } from "../components/Header/Header";
+import Owner from '../components/Owner/Owner.jsx'
+import Categories from '../components/Categories/Categories'
+import Payment from "../components/Payment/Payment";
+import Packing from "../components/Packing/Packing";
+import Accessories from "../components/Accessories/Accessories";
+import Features from "../components/Features/Features";
+import Overview from "../components/Overview/Overview";
+import Battery from "../components/Battery/Battery";
+import Braking from "../components/Braking/Braking";
+import Built from "../components/Built/Built";
+import Folding from "../components/Folding/Folding";
+import Regenerative from "../components/Regenerative/Regenerative";
+import Charging from "../components/Charging/Charging";
+import Riding from "../components/Riding/Riding";
+import Manual from "../components/Manual/Manual";
+import Protective from "../components/Protective/Protective";
+import Reviews from "../components/Reviews/Reviews";
+import Control from "../components/Control/Control";
+import Kickscooter from "../components/Kickscooter/Kickscooter";
+import Other from "../components/Other/Other";
+import Footer from "../components/Footer/Footer";
+import AdvantagesCard from "../components/Advantages/AdvantagesCard";
+import Specifications from "../components/Specifications/Specifications";
 
 const Home = () => {
-  const {products} = useContext(StoreContext);
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
-         <div className='basket-icon'>
-            <Link to="/basket" ><HiShoppingCart className='nav__icons__cart nav-icon'/>
-              <span className='basket-icon__number'>{products.length}</span>
-            </Link>
-        </div>
-   
+    <>
+      <ResponsiveMenu 
+        menuOpen={menuOpen}
+        setMenuOpen={setMenuOpen}
+      />
+
+      <Header 
+        menuOpen={menuOpen}
+        setMenuOpen={setMenuOpen}
+      /> 
+
+      <Owner />
+      <Categories />
+      <Payment />
+      <AdvantagesCard />
+      <Packing />
+      <Accessories />
+      <Features />
+      <Overview />
+      <Battery />
+      <Braking />
+      <Built />
+      <Folding />
+      <Regenerative />
+      <Charging />
+      <Riding />
+      <Manual />
+      <Specifications />
+      <Protective />
+      <Reviews />
+      <Control />
+      <Kickscooter />
+      <Other />
+      <Footer />
+    </> 
   )
 }
 
-export default Home
+export default Home;

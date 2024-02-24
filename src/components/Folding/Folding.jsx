@@ -9,12 +9,14 @@ const Folding = () => {
         initial={{opacity: 0, scale: 0}}
         whileInView={{opacity: 1, scale: 1}}
         transition={{duration: 1}}
+        viewport={{once:true}}
     >
         <div className="folding__content">
             <motion.div className="folding__text"
                 initial={{opacity: 0, y: 100}}
                 whileInView={{opacity: 1, y: 0}}
                 transition={{duration: 2}}
+                viewport={{once:true}}
             >
                 <div className="folding__text__title">
                     <h2>DUAL BRAKING SYSTEM</h2>
@@ -31,4 +33,4 @@ const Folding = () => {
   )
 }
 
-export default Folding
+export default Folding;
