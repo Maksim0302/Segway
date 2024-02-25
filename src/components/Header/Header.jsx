@@ -4,7 +4,6 @@ import { BsInstagram } from 'react-icons/bs';
 import { FiPhone } from "react-icons/fi";
 import logo from "../../images/logo.png";
 import './Header.scss';
-// import Home from '../../pages/Home';
 import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { StoreContext } from '../../context-and-reducer/StoreContext';
@@ -42,19 +41,19 @@ const Navbar = ({setMenuOpen}) => {
             <nav className='header__nav'>
                 <ul className="nav__list">
                     <li>
-                        <a href='#reviews' onClick={() => setMenuOpen(false)}>REVIEWS</a>
+                        <a href='#' onClick={() => setMenuOpen(false)}>REVIEWS</a>
                     </li>
                     <li>
-                        <a href='#payment' onClick={() => setMenuOpen(false)}>SHIPPING AND PAYMENT</a>
+                        <a href='#' onClick={() => setMenuOpen(false)}>SHIPPING AND PAYMENT</a>
                     </li>
                     <li>
-                        <a href='#battery' onClick={() => setMenuOpen(false)}>WHOLESALE</a>
+                        <a href='#' onClick={() => setMenuOpen(false)}>WHOLESALE</a>
                     </li>
                     <li>
-                        <a href='#control' onClick={() => setMenuOpen(false)}>BLOG</a>
+                        <a href='#' onClick={() => setMenuOpen(false)}>BLOG</a>
                     </li>
                     <li>
-                        <a href='#footer' onClick={() => setMenuOpen(false)}>CONTACTS</a>
+                        <a href='#' onClick={() => setMenuOpen(false)}>CONTACTS</a>
                     </li>
                 </ul>
                 <div className="nav__logo">
